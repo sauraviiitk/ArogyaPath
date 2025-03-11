@@ -1,0 +1,12 @@
+/* src/index.css or src/App.css */
+
+body {
+  background-color: black; /* Set background color to black */
+  color: white;            /* Change text color to white for better visibility */
+  margin: 0;               /* Remove default margin */
+  font-family: Arial, sans-serif; /* Optional: Set default font */
+}
+
+* {
+  box-sizing: border-box; /* Ensure padding and borders don’t affect element's width and height */
+}
