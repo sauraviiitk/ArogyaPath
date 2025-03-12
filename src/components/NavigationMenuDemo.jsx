@@ -12,10 +12,31 @@ import {
 } from "./ui/navigation-menu"; // Adjust path as needed
 
 const components = [
-  { title: "Mantras", href: "/Mantras", description: "A modal dialog that interrupts the user with important content." },
-  { title: "Bhajans", href: "/Bhajans", description: "A popup that displays information when hovering over an element." },
-];
-
+    { 
+      title: "Mantras", 
+      href: "/Mantras", 
+      description: "Sacred chants that promote mental clarity, inner peace, and spiritual healing." 
+    },
+    { 
+      title: "Bhajans", 
+      href: "/Bhajans", 
+      description: "Devotional songs that uplift the soul and create a calming spiritual atmosphere." 
+    }
+  ];
+  
+  const component1 = [
+    { 
+      title: "Yoga", 
+      href: "/yogas", 
+      description: "A holistic practice that enhances physical strength, flexibility, and mental well-being." 
+    },
+    { 
+      title: "Pranayam", 
+      href: "/pranayam", 
+      description: "Breathing techniques that improve focus, reduce stress, and promote overall wellness." 
+    }
+  ];
+  
 export function NavigationMenuDemo() {
   return (
     <NavigationMenu className="p-3 ml-3">
@@ -39,9 +60,9 @@ export function NavigationMenuDemo() {
         <NavigationMenuTrigger>Yoga</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-5 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-              {components.map((component) => (
-                <ListItem key={component.title} title={component.title} href={component.href}>
-                  {component.description}
+              {component1.map((component1) => (
+                <ListItem key={component1.title} title={component1.title} href={component1.href}>
+                  {component1.description}
                 </ListItem>
               ))}
             </ul>
