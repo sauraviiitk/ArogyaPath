@@ -1,20 +1,35 @@
-import { NavigationMenuDemo } from "./components/NavigationMenuDemo";
-import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Mantras from "./Tabs/Mantras";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {NavigationMenuDemo} from "./components/NavigationMenuDemo";
 import Bhajans from "./Tabs/Bhajans";
+import Mantras from "./components/Mantras/Mantras";
+import LandingPage from "./components/LandingPage/LandingPage";
+import Footer from "./components/Footer/Footer";
+import ExpandableCardDemo from "./components/ExpandableCardDemo/ExpandableCardDemo";
+
 function App() {
   return (
-    <>
-    <div className="h-500  w-full flex items-center">
-      <NavigationMenuDemo className="pt-3"/>
-    </div>
     <BrowserRouter>
-    <Routes>
-       <Route path="/Mantras" element={<Mantras/>} />
-       <Route path="/Bhajans" element={<Bhajans/>}/>
-    </Routes>
+      <Routes>
+        {/* Show Landing Page and Footer on the Home Page */}
+        <Route path="/" element={<>
+          <NavigationMenuDemo />
+          <LandingPage />
+          <Footer />
+        </>} />
+
+        {/* Show Navbar + Mantras Page */}
+        <Route path="/Mantras" element={<>
+          <NavigationMenuDemo />
+         <ExpandableCardDemo/>
+        </>} />
+
+        {/* Show Navbar + Bhajans Page */}
+        <Route path="/Bhajans" element={<>
+          <NavigationMenuDemo />
+          <Bhajans />
+        </>} />
+      </Routes>
     </BrowserRouter>
-    </>
   );
 }
 

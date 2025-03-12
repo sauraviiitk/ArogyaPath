@@ -9,6 +9,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "./ui/navigation-menu"; // Adjust path as needed
+import HoverButton from "./ui/HoverButton";
 
 const components = [
   { title: "Mantras", href: "/Mantras", description: "Sacred chants that promote mental clarity, inner peace, and spiritual healing." },
@@ -66,6 +67,7 @@ export function NavigationMenuDemo() {
                 Article
               </Link>
             </NavigationMenuItem>
+            <HoverButton/>
 
           </NavigationMenuList>
         </NavigationMenu>
