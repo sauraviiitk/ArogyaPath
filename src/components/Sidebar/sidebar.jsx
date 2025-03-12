@@ -48,8 +48,12 @@ const Sidebar = () => {
 
         {/* Buttons Section */}
         <div className="p-4 flex flex-col space-y-2">
-          <Button variant="outline-primary" className="w-full">Sign Up</Button>
-          <Button variant="primary" className="w-full">Login</Button>
+          <Link to="/signup">
+            <Button variant="outline-primary" className="w-full">Sign Up</Button>
+          </Link>
+          <Link to="/login">
+            <Button variant="primary" className="w-full">Login</Button>
+          </Link>
         </div>
 
         {/* Navigation Links */}

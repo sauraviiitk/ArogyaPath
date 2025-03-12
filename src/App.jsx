@@ -7,7 +7,8 @@ import Footer from "./components/Footer/Footer";
 import ExpandableCardDemo from "./components/ExpandableCardDemo/ExpandableCardDemo";
 import Sidebar from "./components/Sidebar/sidebar";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Signin from "./components/Auth/Signin";
+import Signup from "./components/Auth/Signup";
 function App() {
   return (
     <BrowserRouter>
@@ -31,6 +32,8 @@ function App() {
           <NavigationMenuDemo />
           <Bhajans />
         </>} />
+        <Route path="/signup" element={<><NavigationMenuDemo /><Signup/><Footer/></>}/>
+        <Route path="/login" element={<><NavigationMenuDemo /><Signin/><Footer/></>}/>
       </Routes>
     </BrowserRouter>
   );
