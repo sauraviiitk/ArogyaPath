@@ -5,6 +5,8 @@ import Mantras from "./components/Mantras/Mantras";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Footer from "./components/Footer/Footer";
 import ExpandableCardDemo from "./components/ExpandableCardDemo/ExpandableCardDemo";
+import Sidebar from "./components/Sidebar/sidebar";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
         {/* Show Landing Page and Footer on the Home Page */}
         <Route path="/" element={<>
           <NavigationMenuDemo />
+          <Sidebar/>
           <LandingPage />
           <Footer />
         </>} />
