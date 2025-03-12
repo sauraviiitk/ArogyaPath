@@ -5,7 +5,7 @@ import Bhajans from "./Tabs/Bhajans";
 function App() {
   return (
     <>
-    <div className="h-500  w-full flex items-center  bg-green-500">
+    <div className="h-500  w-full flex items-center">
       <NavigationMenuDemo className="pt-3"/>
     </div>
     <BrowserRouter>
