@@ -63,6 +63,11 @@ export function NavigationMenuDemo() {
 
             {/* Article Link */}
             <NavigationMenuItem>
+              <Link href="/diet" className={navigationMenuTriggerStyle()}>
+                Diet Plan
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
               <Link href="/docs" className={navigationMenuTriggerStyle()}>
                 Article
               </Link>
