@@ -25,11 +25,7 @@ export function NavigationMenuDemo() {
   return (
     <div className="w-full bg-white shadow-md"> {/* Removed overflow-hidden */}
       <div className="max-w-screen-xl mx-auto flex justify-between items-center p-4 relative"> {/* Added relative */}
-        
-        {/* Logo on the left */}
-        <h1 className="text-xl font-bold">LOGO</h1>
-
-        {/* Navigation Menu on the right */}
+         <img src={`/images/logoAro.png`} className="h-32 w-32 cursor-pointer"/>
         <NavigationMenu>
           <NavigationMenuList className="flex gap-6">
             

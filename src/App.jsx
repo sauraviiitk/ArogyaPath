@@ -9,9 +9,10 @@ import Sidebar from "./components/Sidebar/sidebar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Signin from "./components/Auth/Signin";
 import Signup from "./components/Auth/Signup";
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       <Routes>
         {/* Show Landing Page and Footer on the Home Page */}
         <Route path="/" element={<>
